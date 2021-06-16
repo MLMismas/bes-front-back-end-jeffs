@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "bradlc.vscode-tailwindcss",
+        "johnpapa.vscode-peacock",
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "angular.ng-template",
+        "humao.rest-client",
+        "ecmel.vscode-html-css"
+    ]
+}

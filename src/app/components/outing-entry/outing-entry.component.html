@@ -1,0 +1,40 @@
+<form [formGroup]="form"
+      (ngSubmit)="submit()">
+  <div class="form-group">
+    <label for="parkId">Park Id</label>
+    <select class="form-control"
+            formControlName="parkId">
+      <option *ngFor="let p of dropDowndata$ | async"
+              [value]="p.id">{{p.text}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="when">When</label>
+    <input class="form-control"
+           id="when"
+           type="date"
+           formControlName="when">
+  </div>
+  <div class="form-group">
+    <label for="who">Who is creating this?</label>
+    <input class="form-control"
+           id="who"
+           formControlName="who">
+  </div>
+  <div class="form-group">
+    <label for="numberOfPeople">Number of People</label>
+    <input class="form-control"
+           type="number"
+           id="numberOfPeople"
+           formControlName="numberOfPeople">
+  </div>
+  <div class="form-group">
+    <label for="notes">Notes</label>
+    <textarea class="form-control"
+              type="number"
+              id="notes"
+              formControlName="notes"></textarea>
+  </div>
+  <button class="btn btn-success"
+          type="submit">Add This!</button>
+</form>

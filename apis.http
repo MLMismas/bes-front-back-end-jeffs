@@ -1,0 +1,21 @@
+
+# To get a list of parks
+
+
+GET https://localhost:44332/references/parks
+Accept: application/json
+
+
+
+POST https://localhost:44332/api/scheduledoutings
+Content-Type: application/json
+Accept: application/json
+
+{
+  "parkId": "Dog",
+  "when": "2021-06-15T19:26:16.553Z",
+  "who": "Joe",
+  "notes": "Bring Bug Spray",
+  "numberOfPeople": 0
+}
+

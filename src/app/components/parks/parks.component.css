@@ -1,0 +1,8 @@
+.card {
+  margin-bottom: 3rem;
+}
+
+.parent.faded {
+  opacity: 0.5;
+
+}
